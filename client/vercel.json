@@ -2,11 +2,11 @@
     "rewrites": [
         {
             "source": "/adminlogin",
-            "destination": "/index.html"
+            "destination": "/adminlogin"
         },
         {
             "source": "/(.*)",
-            "destination": "/$1"
+            "destination": "/"
         }
     ]
 }
