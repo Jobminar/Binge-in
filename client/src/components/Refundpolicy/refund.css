@@ -1,0 +1,92 @@
+.refund-con{
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid black; */
+}
+.refund-sub{
+   
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid green; */
+    height: auto;
+    background-color: rgba(249, 197, 197, 1);
+}
+/* refund.css */
+
+/* refund.css */
+
+.refund-con {
+    /* Add any styles for the container if needed */
+  }
+  
+  .refund-sub {
+    opacity: 0; /* Initially hide the element */
+    animation: slideIn 2s forwards; /* Apply the animation with a duration of 2 seconds */
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(50px); /* Initial position off-screen (move from bottom) */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Final position at the top */
+    }
+  }
+  .refund-sub h1{
+    font-family: Oswald;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 1rem;
+
+  }
+  li{
+    font-family: IBM Plex Sans;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  @media (min-width: 360px) and (max-width: 600px){
+    .refund-con{
+      width: 100%;
+      height: auto;
+      padding-bottom: 2rem;
+      /* border: 1px solid black; */
+    }
+    .refund-sub{
+       padding-bottom: 2rem;
+       
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        /* border: 1px solid green; */
+        height: auto;
+        background-color: rgba(249, 197, 197, 1);
+    }
+    .refund-sub h1{
+      font-family: Oswald;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 36px;
+      letter-spacing: 0em;
+      text-align: left;
+      padding: 1rem;
+  
+    }
+    li{
+      font-family: IBM Plex Sans;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 31px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+  }

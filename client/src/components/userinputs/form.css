@@ -1,0 +1,20 @@
+.user-input{
+    width: 25rem;
+    background: rgba(255, 232, 232, 1);
+    color: rgba(250, 192, 180, 1);
+}
+label{
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:rgba(250, 192, 180, 1);
+    
+
+}
+.input-data{
+    margin-top: 1rem;
+    color: aqua;
+}

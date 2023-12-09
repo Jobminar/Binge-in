@@ -1,0 +1,315 @@
+.mini-home-con{
+    margin: 0rem;
+    height: auto;
+    padding: 0rem 3rem;
+    /* border: 1px solid green; */
+    background: linear-gradient(180deg, #000000 59.96%, #B46161 100%);
+}
+.mini-head h1{
+    font-family: Oswald;
+    font-size: 96px;
+    font-weight: 400;
+    line-height: 100px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    /* border: 1px solid green; */
+    
+}
+.mini-head span{
+    font-family: IBM Plex Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.mini-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0rem;
+    /* border: 1px solid green; */
+    padding: 0rem;
+    align-items: center;
+}
+.mini-head img{
+    width: 3.5rem;
+    height: 2rem;
+}
+.input-section{
+    /* border: 1px solid green; */
+    padding: 0rem 3rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+input{
+    
+    width: 10rem;
+    height: 2rem;
+    background-color: #B46161;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+.input1{
+    width: 15rem;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+
+}
+.input4{
+    width: 15rem;
+}
+.input-sub{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.selected-row {
+    background-color: lightblue; /* Change background color as desired */
+    /* Additional styles for selected row */
+}
+
+.input-sub p{
+    color: white;
+    padding: 0rem;
+    margin: 0.5rem;
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+.result{
+    color: white;
+}
+/* table */
+.slots{
+    font-family: Oswald;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 59px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: linear-gradient(269.75deg, #B46161 4.8%, #FCC3B6 99.83%),
+linear-gradient(0deg, #FFFFFF, #FFFFFF);
+
+
+}
+.table-section{
+    /* border: 1px solid green; */
+    color: white;
+    padding: 3rem 0rem;
+    font-family: Oswald;
+
+}
+th{
+    width: 20rem;
+    height: 2rem;
+    text-align: center;
+    padding: 1rem 0rem;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: linear-gradient(0deg, #FFFFFF, #FFFFFF);
+
+
+}
+td{
+    width: 20rem;
+    height: 2rem;
+    text-align: center;
+    font-family: IBM Plex Sans;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0em;
+    padding: 0.5rem 0rem;
+    color: rgba(249, 197, 197, 1);
+
+    
+}
+.mobile-view{
+    display: none;
+}
+.book-now{
+
+   
+    padding: 4rem 0rem;
+   
+     text-align: right;
+     /* border: 1px solid green; */
+     
+}
+.book-now:hover{
+    cursor: pointer;
+}
+.book-now img{
+    width: 20rem;
+    height: 5rem;
+}
+/* responsive */
+
+@media (min-width: 360px) and (max-width: 600px){
+    .mini-home-con{
+        margin: 0rem;
+        padding: 0rem 1rem;
+        /* border: 1px solid green; */
+        height: auto;
+        background: none;
+        
+    }
+    .mini-head h1{
+
+        font-size: 86px;
+
+        line-height: 90px;
+    
+        color: linear-gradient(to right, rgb(180,97,97), rgb(252,195,182));
+ 
+        
+    }
+
+    .mini-head{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0rem;
+        /* border: 1px solid green; */
+        padding: 0rem;
+        align-items: center;
+    }
+    .mini-head img{
+        width: 3.5rem;
+        height: 2rem;
+    }
+    .input-section{
+        /* border: 1px solid green; */
+        padding: 0rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    input{
+    
+        width: 15rem;
+        height: 2rem;
+       
+    }
+   
+    .input-sub{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .input-sub p{
+        color: white;
+        padding: 0rem;
+        margin: 0.5rem;
+        font-family: IBM Plex Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+        letter-spacing: 0em;
+        text-align: left;
+        
+    }
+    .result{
+        color: white;
+    }
+   
+    .table-section{
+      
+        padding: 1rem 0rem;
+        
+    
+    }
+    th{
+        width: 10rem;
+        height: 2rem;
+        text-align: center;
+        padding: 1rem 0rem;
+        
+        color: linear-gradient(0deg,black ,white );
+    
+    
+    }
+    td{
+        width: 20rem;
+        height: 2rem;
+        text-align: center;
+        font-family: IBM Plex Sans;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 21px;
+        letter-spacing: 0em;
+        padding: 0.5rem 0rem;
+        color: rgba(249, 197, 197, 1);
+    
+        
+    }
+    .table-section{
+        display: none;
+    }
+    .mobile-view{
+        display: block;
+        margin: 1rem 0rem;
+        /* border: 1px solid green; */
+    }
+   .date-section{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: left;
+   }
+   .date-sub-section h1{
+        font-family: Oswald;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+       color:rgba(249, 197, 197, 1);
+       
+   }
+   .date-section p{
+    font-family: IBM Plex Sans;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:  rgba(249, 197, 197, 1);
+    
+   }
+   th{
+    color:rgba(249, 197, 197, 1);
+   }
+   .book-now{
+
+   
+    padding: 1rem 0rem;
+   
+     text-align: right;
+     /* border: 1px solid green; */
+     
+}
+.book-now:hover{
+    cursor: pointer;
+}
+.book-now img{
+    width: 10rem;
+    height: 3rem;
+}
+}
+
