@@ -6,10 +6,10 @@ import logo from "../../assets/images/logo.png";
 import grid from "../../assets/images/grid.png";
 import mini from "../../assets/images/mini.png";
 import large from "../../assets/images/large.png";
-import call from "../../assets/images/🦆 icon _call_call.png";
-import youtube from "../../assets/images/🦆 icon _youtube with circle_youtube.png";
-import insta from "../../assets/images/🦆 icon _instagram with circle icon_insta.png";
-import facebook from "../../assets/images/🦆 icon _facebook_facebook.png";
+import call from "../../assets/images/icon _call_call.png";
+import youtube from "../../assets/images/icon _youtube with circle_youtube.png";
+import insta from "../../assets/images/icon _instagram with circle icon_insta.png";
+import facebook from "../../assets/images/icon _facebook_facebook.png";
 // import Navbar from './navbar';
 
 const Home = () => {

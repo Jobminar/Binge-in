@@ -3,6 +3,7 @@ import ReactToPrint from "react-to-print";
 import DatePicker from "react-datepicker";
 import TimePicker from "react-time-picker";
 import PropTypes from "prop-types";
+import PrintShare from "./PrintShare";
 import "react-datepicker/dist/react-datepicker.css";
 import "react-time-picker/dist/TimePicker.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -18,9 +19,11 @@ const UserDetailsForm = ({ onClose }) => {
     numOfPeople: "",
     addons: "",
     extras: [],
+    generatedBill: null, // Add generatedBill to the form data
   });
 
   const [billPopup, setBillPopup] = useState(false);
+  const [printShareMode, setPrintShareMode] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value, type } = e.target;
@@ -70,6 +73,11 @@ const UserDetailsForm = ({ onClose }) => {
   };
 
   const generateBill = () => {
+    // Calculate and set the generated bill value
+    const totalBill = calculateTotal();
+    setFormData((prevData) => ({ ...prevData, generatedBill: totalBill }));
+
+    // Open the bill popup
     setBillPopup(true);
   };
 
@@ -90,9 +98,14 @@ const UserDetailsForm = ({ onClose }) => {
       addons: "",
       extras: [],
       theaterType: "Mini",
+      generatedBill: null, // Reset generatedBill on form clear
     });
   };
 
+  const handlePrint = () => {
+    // Open print share mode and pass form data including the generated bill
+    setPrintShareMode(true);
+  };
   return (
     <div id="popup" className="d-block">
       <div className="card popup-card" ref={componentRef}>
@@ -272,12 +285,9 @@ const UserDetailsForm = ({ onClose }) => {
             >
               Clear Form
             </button>
-            <ReactToPrint
-              trigger={() => (
-                <button className="btn btn-warning ms-2">Print</button>
-              )}
-              content={() => componentRef.current}
-            />
+            <button className="btn btn-warning ms-2" onClick={handlePrint}>
+              Print
+            </button>
             <button className="btn btn-dark ms-2" onClick={closePopup}>
               Close
             </button>
@@ -291,6 +301,12 @@ const UserDetailsForm = ({ onClose }) => {
                 Close
               </button>
             </div>
+          )}
+          {printShareMode && (
+            <PrintShare
+              userDetails={formData}
+              onClose={() => setPrintShareMode(false)}
+            />
           )}
         </div>
       </div>
